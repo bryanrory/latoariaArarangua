@@ -10,9 +10,9 @@
   --dark-warm: #24201b;
   --madeira: #3a2a1e;
   --madeira-light: #4d3828;
-  --gold: #d4a017;
-  --gold-light: #e0b83a;
-  --gold-pale: #ecd57a;
+  --gold: #F5C400;
+  --gold-light: #ffd84d;
+  --gold-pale: #ffe680;
   --cream: #faf8f4;
   --cream-dark: #f2efe8;
   --gray-100: #f8f7f5;
@@ -27,7 +27,7 @@
   --font-body: 'DM Sans', system-ui, sans-serif;
 
   /* Spacing */
-  --section-py: clamp(40px, 5vw, 65px);
+  --section-py: clamp(48px, 6vw, 72px);
   --container-px: clamp(20px, 4vw, 40px);
 
   /* Effects */
@@ -81,11 +81,11 @@ strong {
 em {
   font-family: var(--font-display);
   font-style: italic;
-  color: #F5C400;
+  color: var(--gold);
 }
 
 ::selection {
-  background: #F5C400;
+  background: var(--gold);
   color: var(--white);
 }
 
@@ -177,7 +177,7 @@ nav {
   transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background: #F5C400;
+  background: var(--gold);
   transition: width 0.3s var(--ease);
 }
 
@@ -199,7 +199,7 @@ nav {
   align-items: center;
   gap: 8px;
   color: #000;
-  background: #F5C400;
+  background: var(--gold);
   text-decoration: none;
   font-size: 11px;
   font-weight: 600;
@@ -212,7 +212,7 @@ nav {
 }
 
 .nav-cta:hover {
-  background: #ffd84d;
+  background: var(--gold-light);
   transform: translateY(-1px);
 }
 
@@ -296,7 +296,7 @@ nav {
 }
 
 .btn-primario {
-  background: #F5C400;
+  background: var(--gold);
   color: #000;
 }
 
@@ -310,7 +310,7 @@ nav {
 }
 
 .btn-primario:hover {
-  background: #ffd84d;
+  background: var(--gold-light);
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(245, 196, 0, 0.35);
 }
@@ -390,7 +390,7 @@ nav {
 .hero-line {
   width: 40px;
   height: 1px;
-  background: #F5C400;
+  background: var(--gold);
   margin: 0 auto 14px;
 }
 
@@ -400,7 +400,7 @@ nav {
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #F5C400;
+  color: var(--gold);
   margin-bottom: 12px;
 }
 
@@ -464,7 +464,7 @@ nav {
 .hero-scroll-line {
   width: 1px;
   height: 40px;
-  background: linear-gradient(180deg, #F5C400, transparent);
+  background: linear-gradient(180deg, var(--gold), transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
@@ -484,14 +484,14 @@ nav {
   font-weight: 600;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #F5C400;
+  color: var(--gold);
   margin-bottom: 12px;
 }
 
 .section-divider {
   width: 40px;
   height: 1px;
-  background: #F5C400;
+  background: var(--gold);
   margin-top: 4px;
   margin-bottom: 20px;
 }
@@ -503,7 +503,7 @@ nav {
 
 .section-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .section-desc {
@@ -562,13 +562,13 @@ section h2 {
 }
 
 .diff-icone {
-  color: #F5C400;
+  color: var(--gold);
   margin-bottom: 20px;
   opacity: 0.85;
 }
 
 .diff-icone svg {
-  stroke: #F5C400;
+  stroke: var(--gold);
 }
 
 .diff-item h3 {
@@ -630,7 +630,7 @@ section h2 {
   left: 20px;
   right: -20px;
   bottom: -20px;
-  border: 1px solid #F5C400;
+  border: 1px solid var(--gold);
   border-radius: var(--radius);
   opacity: 0.3;
   z-index: -1;
@@ -654,14 +654,14 @@ section h2 {
   font-size: 44px;
   font-weight: 700;
   line-height: 1;
-  color: #F5C400;
+  color: var(--gold);
 }
 
 .badge-mais {
   font-family: var(--font-display);
   font-size: 30px;
   font-weight: 400;
-  color: #F5C400;
+  color: var(--gold);
 }
 
 .badge-texto {
@@ -681,7 +681,7 @@ section h2 {
 }
 
 .sobre-conteudo h2 em {
-  color: #F5C400;
+  color: var(--gold);
 }
 
 .sobre-texto {
@@ -717,7 +717,7 @@ section h2 {
   font-family: var(--font-display);
   font-size: 38px;
   font-weight: 700;
-  color: #F5C400;
+  color: var(--gold);
   line-height: 1;
 }
 
@@ -725,7 +725,7 @@ section h2 {
   font-family: var(--font-display);
   font-size: 28px;
   font-weight: 400;
-  color: #F5C400;
+  color: var(--gold);
 }
 
 .stat-label {
@@ -751,6 +751,12 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+}
+
+a.card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .card {
@@ -823,7 +829,7 @@ section h2 {
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #F5C400;
+  color: var(--gold);
 }
 
 .card-overlay-btn {
@@ -839,13 +845,13 @@ section h2 {
 }
 
 .card-overlay-btn:hover {
-  background: #F5C400;
+  background: var(--gold);
   color: #000;
-  border-color: #F5C400;
+  border-color: var(--gold);
 }
 
 .card-info {
-  padding: 24px 28px 28px;
+  padding: 16px 24px 20px;
 }
 
 .card-info h3 {
@@ -902,7 +908,7 @@ section h2 {
 }
 
 .cta h2 em {
-  color: #F5C400;
+  color: var(--gold);
 }
 
 .cta p {
@@ -914,7 +920,7 @@ section h2 {
 }
 
 .cta .section-tag {
-  color: #F5C400;
+  color: var(--gold);
 }
 
 /* ========================================
@@ -945,7 +951,7 @@ a.contato-item {
 .contato-item {
   display: block;
   background: var(--white);
-  padding: 20px 28px;
+  padding: 28px 24px;
   border-radius: 10px;
   text-align: center;
   border: 1px solid var(--gray-200);
@@ -955,7 +961,7 @@ a.contato-item {
 .contato-item:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: #F5C400;
+  border-color: var(--gold);
 }
 
 .contato-icone {
@@ -972,12 +978,12 @@ a.contato-item {
 }
 
 .contato-item:hover .contato-icone {
-  background: #F5C400;
-  border-color: #F5C400;
+  background: var(--gold);
+  border-color: var(--gold);
 }
 
 .contato-icone svg {
-  stroke: #F5C400;
+  stroke: var(--gold);
   transition: stroke 0.3s var(--ease);
 }
 
@@ -1010,7 +1016,7 @@ footer {
 }
 
 .footer-top {
-  padding: 35px 0 25px;
+  padding: 40px 0 30px;
 }
 
 .footer-grid {
@@ -1072,8 +1078,8 @@ footer {
 }
 
 .social-icon:hover {
-  border-color: #F5C400;
-  background: #F5C400;
+  border-color: var(--gold);
+  background: var(--gold);
 }
 
 .social-icon:hover .social-icon-inner svg {
@@ -1100,7 +1106,7 @@ footer {
   left: 0;
   width: 20px;
   height: 1px;
-  background: #F5C400;
+  background: var(--gold);
 }
 
 .footer-col a {
@@ -1115,7 +1121,7 @@ footer {
 }
 
 .footer-col a:hover {
-  color: #F5C400;
+  color: var(--gold);
   padding-left: 6px;
 }
 
